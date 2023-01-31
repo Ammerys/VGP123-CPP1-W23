@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -13351,10 +13351,10 @@ TextureImporter:
       Tilemap_Grassland_453: -325448488
       Tilemap_Grassland_515: -1637881248
       Tilemap_Grassland_100: 253667031
-      Tilemap_Grassland_186: 2119273369
-      Tilemap_Grassland_493: -1172326818
       Tilemap_Grassland_263: -786951877
+      Tilemap_Grassland_186: 2119273369
       Tilemap_Grassland_272: -863645485
+      Tilemap_Grassland_493: -1172326818
       Tilemap_Grassland_173: -1468294372
       Tilemap_Grassland_115: -912388202
       Tilemap_Grassland_547: -2007855880
