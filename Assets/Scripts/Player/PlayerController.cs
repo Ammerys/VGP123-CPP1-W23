@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
     {
         float hInput = Input.GetAxisRaw("Horizontal");
 
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, isGroundedLayer);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, isGroundLayer);
 
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
@@ -72,6 +72,6 @@ public class PlayerController : MonoBehaviour
         rb.velocity = moveDirection;
 
         anim.SetBool("isGrounded", isGrounded);
-        anim.setFloat("hInput", Mathf.Abs(hInput));
+        anim.SetFloat("hInput", Mathf.Abs(hInput));
     }
 }
