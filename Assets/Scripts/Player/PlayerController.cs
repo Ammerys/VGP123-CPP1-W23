@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -86,11 +87,15 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce);
         }
 
+        if (!isGrounded && Input.GetButtonDown("Jump"))
+        {
+            anim.SetTrigger("JumpAttack");
+        }
         /*
          
         if (Input.GetButtonDown("Fire1"))
         {
-            anim.SetTrigger("roll");
+            anim.SetTrigger("roll"); 
         }
 
  
@@ -113,4 +118,44 @@ public class PlayerController : MonoBehaviour
         }
         */
     }
+/*
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Powerup"))
+        {
+
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Powerup"))
+        {
+
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Powerup"))
+        {
+
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        
+    }
+
+    private void OnCollisionStay2D(Collision collision)
+    {
+        
+    }
+*/
 }
